@@ -28,7 +28,8 @@ a:active {
   color: inherit;
 }
 
-.current {
+.current,
+.current:hover {
   color: #999999;
 }
 
@@ -133,4 +134,57 @@ nav ul li:not(:last-child) {
 
 .menu:hover div {
   visibility: visible;
+}
+
+/* Footer */
+
+#sns {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 4rem;
+}
+
+#sns:hover {
+  color: #999999;
+}
+
+#sns a:not(:last-child) {
+  margin-right: 2rem;
+}
+
+#sns a:hover {
+  color: #000;
+}
+
+/* Responsive Screen For Tablet */
+@media (max-width: 1024px) {
+  nav {
+    padding: 0 1rem;
+  }
+}
+
+/* Responsive Screen For Smartphone */
+@media (max-width: 480px) {
+  .food-grid {
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 0.5rem;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  nav ul {
+    margin-top: 4rem;
+  }
+
+  nav ul li:not(:last-child) {
+    padding-right: 3rem;
+  }
 }
