@@ -184,7 +184,11 @@ nav ul li:not(:last-child) {
     margin-top: 4rem;
   }
 
+  nav ul li a {
+    font-size: 0.8rem;
+  }
+
   nav ul li:not(:last-child) {
-    padding-right: 3rem;
+    padding-right: 2rem;
   }
 }
